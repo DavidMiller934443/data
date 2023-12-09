@@ -454,7 +454,7 @@ nameserver 1.1.1.1
 └─# sudo service networking restart && ping g.cn -c 3
 ```
 
-**配置 `mysql` **
+**配置 `mysql`**
 
 运行服务
 
@@ -472,7 +472,7 @@ New password:
 Confirm new password:
 ```
 
-**配置 `proxychains4` **
+**配置 `proxychains4`**
 
 > 服务器安装则不需要
 
@@ -623,146 +623,3 @@ Firefox
 ┌──(root㉿#-kali-#)-[~]
 └─# sudo apt update
 ```
-
-| [靶场](E:\Data\Security\2.渗透测试\2.靶场) |
-| :----------------------------------------: |
-|                    dvwa                    |
-|                  pikachu                   |
-|                   vulhub                   |
-
-| [系统配置](E:\Data\Security\2.渗透测试\3.系统配置) |
-| :------------------------------------------------: |
-|                        kali                        |
-|                       centos                       |
-|                      windows                       |
-|                       linux                        |
-
-| [实验环境](E:\Data\Security\2.渗透测试\4.实验环境) |
-| :------------------------------------------------: |
-|                       mysql                        |
-|                         go                         |
-|                       docker                       |
-|                     virtualenv                     |
-|                      composer                      |
-|                        java                        |
-
-| [代理工具](E:\Data\Security\2.渗透测试\5.代理工具) |
-| :------------------------------------------------: |
-|                    proxychains                     |
-|                       clash                        |
-
-| [实用工具](E:\Data\Security\2.渗透测试\6.实用工具) |
-| :------------------------------------------------: |
-|                        git                         |
-|                       gdebi                        |
-|                       chrome                       |
-|                       fcitx                        |
-|                  translate-shell                   |
-
-|      [信息收集](E:\Data\Security\2.渗透测试\7.信息收集)      |
-| :----------------------------------------------------------: |
-| [目标发现](E:\Data\Security\2.渗透测试\7.信息收集\1.目标发现) |
-|                         theHarvester                         |
-|                           gobuster                           |
-|                         hackertarget                         |
-|                            fierce                            |
-|                          ip2domain                           |
-|                            adinfo                            |
-| [dns 解析记录](E:\Data\Security\2.渗透测试\7.信息收集\2.dns 解析记录) |
-|                             dig                              |
-|                           nslookup                           |
-|                            dnsmap                            |
-| [c 段扫描](E:\Data\Security\2.渗透测试\7.信息收集\3.c 段扫描) |
-|                            fping                             |
-| [网络测绘](E:\Data\Security\2.渗透测试\7.信息收集\4.网络测绘) |
-|                            searpy                            |
-|                             ones                             |
-|                            asamf                             |
-| [子域名爆破](E:\Data\Security\2.渗透测试\7.信息收集\5.子域名爆破) |
-|                          oneforall                           |
-|                       subdomainsbrute                        |
-|                          ksubdomain                          |
-|                      subdomains-scanner                      |
-|                          subdomain3                          |
-| [http 状态](E:\Data\Security\2.渗透测试\7.信息收集\6.http 状态) |
-|                        httpx-toolkit                         |
-| [定位跟踪](E:\Data\Security\2.渗透测试\7.信息收集\7.定位跟踪) |
-|                          traceroute                          |
-|                             mtr                              |
-|                          nexttrace                           |
-
-| [指纹识别](E:\Data\Security\2.渗透测试\8.指纹识别) |
-| :------------------------------------------------: |
-|                      whatweb                       |
-|                       ehole                        |
-
-| [端口扫描](E:\Data\Security\2.渗透测试\9.端口扫描) |
-| :------------------------------------------------: |
-|                        nmap                        |
-|                       netcat                       |
-|                      masscan                       |
-|                       pnscan                       |
-|                      rustscan                      |
-|                       yscan                        |
-
-| [爬虫](E:\Data\Security\2.渗透测试\10.爬虫) |
-| :-----------------------------------------: |
-|                     rad                     |
-|                  crawlergo                  |
-|                   katana                    |
-|                  xcrawl3r                   |
-|                    argo                     |
-|                   httrack                   |
-|                   scrapy                    |
-
-| [目录扫描](E:\Data\Security\2.渗透测试\11.目录扫描) |
-| :-------------------------------------------------: |
-|                        dirb                         |
-|                      dirsearch                      |
-|                       dirpro                        |
-|                       dirmap                        |
-
-| [流量分析](E:\Data\Security\2.渗透测试\12.流量分析) |
-| :-------------------------------------------------: |
-|                      wireshark                      |
-|                       tcpdump                       |
-
-| [漏洞扫描](E:\Data\Security\2.渗透测试\14.漏洞扫描) |
-| :-------------------------------------------------: |
-|                       bbscan                        |
-|                       wpscan                        |
-|                       nuclei                        |
-|                        nikto                        |
-|                        xray                         |
-|                        xpoc                         |
-
-| [漏洞评估](E:\Data\Security\2.渗透测试\15.漏洞评估) |
-| :-------------------------------------------------: |
-|                         arl                         |
-|                       zaproxy                       |
-|                      skipfish                       |
-
-| [漏洞情报](E:\Data\Security\2.渗透测试\16.漏洞情报) |
-| :-------------------------------------------------: |
-|                      exploitdb                      |
-|                    searchsploit                     |
-
-| [漏洞利用](E:\Data\Security\2.渗透测试\17.漏洞利用) |
-| :-------------------------------------------------: |
-|                        burp                         |
-|                        msfdb                        |
-|                       sqlmap                        |
-|                       dalfox                        |
-|                        xsser                        |
-
-| [远程控制](E:\Data\Security\2.渗透测试\21.远程控制) |
-| :-------------------------------------------------: |
-|                      behinder                       |
-|                      godzilla                       |
-|                      antsword                       |
-|                       netcat                        |
-
-| [脚本](E:\Data\Security\2.渗透测试\38.脚本) |
-| :-----------------------------------------: |
-|                linebreak.py                 |
-
