@@ -20,14 +20,15 @@ vmware
 
 directory
 
-> D:\documents\virtual machines\\#-kali-#\
->
-> > kali-mirror
-> >
-> > > installer images
->
-> > kali-vm
+```
+D:\documents\virtual machines\#-kali-#
+├─Kali-Mirror
+│      kali-linux-installer-amd64.iso
+│
+└─Kali-VM
+```
 
+## 
 ## 安装
 
 **服务器**
