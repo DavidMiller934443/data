@@ -22,13 +22,12 @@ directory
 
 ```
 D:\documents\virtual machines\#-kali-#
-├─kali-mirror
+├─#-kali-#-mirror
 │      kali-linux-installer-amd64.iso
 │
-└─kali-vm
+└─#-kali-#-vm
 ```
 
-## 
 ## 安装
 
 **服务器**
@@ -41,7 +40,7 @@ D:\documents\virtual machines\#-kali-#
 
 在 `Upload ISO from remote machine` 中添加 `kali-linux-installer-amd64.iso` 的 `url` 
 
-> https://cdimage.kali.org/kali/kali-linux-installer-amd64.iso 
+> https://cdimage.kali.org/kali/kali-linux-installer-amd64.iso
 
 点击 `Upload` 
 
@@ -79,7 +78,7 @@ D:\documents\virtual machines\#-kali-#
 
 位置
 
-> D:\documents\virtual machines\\#-kali-#\kali-vm
+> D:\documents\virtual machines\\#-kali-#\\#-kali-#-vm
 
 处理器数量
 
@@ -117,7 +116,7 @@ D:\documents\virtual machines\#-kali-#
 
 磁盘文件
 
-> D:\documents\virtual machines\\#-kali-#\kali-vm\kali.vmdk
+> D:\documents\virtual machines\\#-kali-#\\#-kali-#-vm\\#-kali-#.vmdk
 
 完成
 
@@ -129,7 +128,7 @@ D:\documents\virtual machines\#-kali-#
 
 使用 ISO 映像文件
 
-> D:\documents\virtual machines\\#-kali-#\kali-mirror\kali-linux-installer-amd64.iso
+> D:\documents\virtual machines\\#-kali-#\\#-kali-#-mirror\kali-linux-installer-amd64.iso
 
 USB 兼容性
 
@@ -468,12 +467,12 @@ nameserver 1.1.1.1
 
 ```shell
 ┌──(root㉿#-kali-#)-[~]
-└─# mysqladmin -u root password
+└─# mysqladmin -u root password 
 New password: 
 Confirm new password:
 ```
 
-**配置 `proxychains4`**
+**配置 `proxychains4`** 
 
 > 服务器安装则不需要
 
@@ -571,7 +570,6 @@ Qt5 设置
 Firefox
 
 > Language 简体中文
->
 
 电源管理器
 
@@ -580,21 +578,21 @@ Firefox
 > > 系统睡眠模式：挂起
 > >
 > > 在闲置时：从不
-> 
+>
 > 显示
-> 
+>
 > > 转入黑屏状态时间：从不
 > >
 > > 转入休眠状态时间：从不
-> > 
+> >
 > > 转入关闭状态时间：从不
-> 
+>
 > 安全性
-> 
+>
 > > 自动锁定会话：从不
->>
+>
 > > 在屏保之后延迟锁定：1 秒
->>
+>
 > > 勾选当系统休眠时锁定屏幕
 
 电源按钮
