@@ -88,7 +88,7 @@ D:\downloads\platform-tools-windows\platform-tools>.\fastboot.exe devices
 
 显示 `Windows 已成功更新你的驱动程序` ，点击 `关闭` 
 
-![Windows 已成功更新你的驱动程序](./images/Windows 已成功更新你的驱动程序.png)
+![Windows 已成功更新你的驱动程序](https://github.com/DavidMiller934443/data/assets/153364303/2d3f4946-d4ea-469c-a755-5d8ab5396b95) 
 
 再次检测设备
 
