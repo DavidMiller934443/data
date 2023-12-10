@@ -65,7 +65,7 @@
 > 手机上勾选一律允许使用这台计算机进行调试
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe devices
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe devices
 ```
 
 > 没有检测到设备
@@ -78,7 +78,7 @@ D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe device
 
 >  `Google USB` 驱动
 >
-> D:\Downloads\usb_driver_r13-windows\usb_driver\android_winusb.inf
+> D:\downloads\usb_driver_r13-windows\usb_driver\android_winusb.inf 
 
 `打开` ， `确定` 
 
@@ -93,7 +93,7 @@ D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe device
 再次检测设备
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe devices
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe devices
 b65b7917         fastboot 
 ```
 
@@ -102,7 +102,7 @@ b65b7917         fastboot 
 解锁 `bootloader`
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe oem unlock
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe oem unlock
 OKAY [  3.227s]
 Finished. Total time: 0.122s
 ```
@@ -114,13 +114,13 @@ Finished. Total time: 0.122s
 解锁后，连接电脑进入 `fastboot` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe reboot bootloader
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe reboot bootloader
 ```
 
 刷入 `boot` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash boot D:\Downloads\boot.img
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash boot D:\downloads\boot.img
 Sending 'boot' (131072 KB)                         OKAY [  3.246s]
 Writing 'boot'                                     OKAY [  0.548s]
 Finished. Total time: 3.807s
@@ -129,7 +129,7 @@ Finished. Total time: 3.807s
 刷入 `recovery` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash recovery D:\Downloads\recovery.img
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash recovery D:\downloads\recovery.img
 Sending 'recovery' (131072 KB)                     OKAY [  3.253s]
 Writing 'recovery'                                 OKAY [  0.538s]
 Finished. Total time: 3.810s
@@ -138,7 +138,7 @@ Finished. Total time: 3.810s
 进入 `recovery` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe reboot-recovery
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe reboot-recovery
 Rebooting into recovery                            OKAY [  0.004s]
 Finished. Total time: 0.004s
 ```
@@ -154,7 +154,7 @@ Finished. Total time: 0.004s
 刷入 `LineageOS`
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe sideload D:\Downloads\lineage-19.1-20231010-nightly-monet-signed.zip
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe sideload D:\downloads\lineage-19.1-20231010-nightly-monet-signed.zip
 Total xfer: 1.00x
 ```
 
@@ -163,7 +163,7 @@ Total xfer: 1.00x
 刷入 `Google apps` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe sideload D:\Downloads\MindTheGapps-12.1.0-arm64-20231025_200924.zip
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe sideload D:\downloads\MindTheGapps-12.1.0-arm64-20231025_200924.zip
 Total xfer: 1.00x
 ```
 
@@ -198,13 +198,13 @@ Total xfer: 1.00x
 手机连接电脑，进入 `fastboot` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe reboot bootloader
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe reboot bootloader
 ```
 
 刷入 `magisk patched-24200_iLBiF.img` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash boot D:\Downloads\magisk_patched-26400_OQ8Wk.img
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash boot D:\downloads\magisk_patched-26400_OQ8Wk.img
 Sending 'boot' (131072 KB)                         OKAY [  3.235s]
 Writing 'boot'                                     OKAY [  0.551s]
 Finished. Total time: 3.798s
@@ -213,7 +213,7 @@ Finished. Total time: 3.798s
 重启后即可成功获取 `root` 权限
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe reboot
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe reboot
 Rebooting                                          OKAY [  0.001s]
 Finished. Total time: 0.001s
 ```
@@ -227,13 +227,13 @@ Finished. Total time: 0.001s
 解锁后，手机连接电脑，进入 `fastboot` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe reboot bootloader
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\adb.exe reboot bootloader
 ```
 
 刷入 `TeamWin - TWRP` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash recovery D:\Downloads\twrp-3.7.0_12-0-monet.img
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe flash recovery D:\downloads\twrp-3.7.0_12-0-monet.img
 Sending 'recovery' (131072 KB)                     OKAY [  3.227s]
 Writing 'recovery'                                 OKAY [  0.542s]
 Finished. Total time: 3.790s
@@ -242,7 +242,7 @@ Finished. Total time: 3.790s
 进入 `recovery` 
 
 ```powershell
-D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe reboot-recovery
+D:\downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe reboot-recovery
 Rebooting into recovery                            OKAY [  0.003s]
 Finished. Total time: 0.004s
 ```
