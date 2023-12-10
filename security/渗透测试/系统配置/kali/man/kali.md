@@ -41,7 +41,7 @@ D:\documents\virtual machines\#-kali-#
 
 在 `Upload ISO from remote machine` 中添加 `kali-linux-installer-amd64.iso` 的 `url` 
 
-> https://www.kali.org/kali-images/kali-linux-installer-amd64.iso
+> https://cdimage.kali.org/kali/kali-linux-installer-amd64.iso 
 
 点击 `Upload` 
 
