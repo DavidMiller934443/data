@@ -21,7 +21,7 @@ vmware
 directory
 
 ```
-D:\documents\virtual machines\#-kali-#
+D:\documents\virtual machines\#-kali-#\
 ├─Kali-Mirror
 │      kali-linux-installer-amd64.iso
 │
