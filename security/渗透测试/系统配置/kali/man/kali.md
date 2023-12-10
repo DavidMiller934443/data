@@ -22,10 +22,10 @@ directory
 
 ```
 D:\documents\virtual machines\#-kali-#
-├─Kali-Mirror
+├─kali-mirror
 │      kali-linux-installer-amd64.iso
 │
-└─Kali-VM
+└─kali-vm
 ```
 
 ## 
