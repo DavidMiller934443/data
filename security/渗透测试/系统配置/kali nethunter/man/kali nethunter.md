@@ -88,13 +88,13 @@ D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe device
 
 显示 `Windows 已成功更新你的驱动程序` ，点击 `关闭` 
 
-![Windows 已成功更新你的驱动程序](./images/Windows 已成功更新你的驱动程序.png)
+![Windows 已成功更新你的驱动程序](https://github.com/DavidMiller934443/data/assets/153364303/8ba4fe4d-61fc-4283-ab71-5fa6f7461412)
 
 再次检测设备
 
 ```powershell
 D:\Downloads\platform-tools_r34.0.5-windows\platform-tools>.\fastboot.exe devices
-b65b7917         fastboot
+b65b7917         fastboot 
 ```
 
 > 成功检测到设备
