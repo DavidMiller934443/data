@@ -166,7 +166,9 @@ Select a language
 
 主机名
 
-> `#-kali-#` 
+> 虚拟机： `#-kali-#` 
+>
+> 服务器：`#` 
 
 域名
 
@@ -241,7 +243,7 @@ Select a language
 设置 `root` 密码
 
 ```shell
-┌──(sec㉿#-kali-#)-[~]
+┌──(sec㉿kali)-[~]
 └─$ sudo passwd root
 [sudo] sec 的密码：
 新的密码：
@@ -252,10 +254,10 @@ Select a language
 切换为 `root` 用户
 
 ```shell
-┌──(sec㉿#-kali-#)-[~]
+┌──(sec㉿kali)-[~]
 └─$ su - root
 Password:
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─#
 ```
 
@@ -264,7 +266,7 @@ Password:
 > 命令行终端不需要
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─$ sudo dpkg-reconfigure locales
 ```
 
@@ -286,7 +288,7 @@ Password:
 允许远程登录 `root`
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# vim /etc/ssh/sshd_config
 ```
 
@@ -298,28 +300,28 @@ Password:
 设置 `ssh` 开机自启
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo systemctl enable ssh --now && sudo systemctl status ssh
 ```
 
 禁止 `ssh` 开机自启
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo systemctl disable ssh --now && sudo systemctl status ssh
 ```
 
 开启 `ssh` 
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo systemctl start ssh && sudo systemctl status ssh
 ```
 
 关闭 `ssh` 
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo systemctl stop ssh && sudo systemctl status ssh
 ```
 
@@ -328,14 +330,14 @@ Password:
 使用 `xshell` 生成密钥，将公钥添加到目标服务器
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# vim ~/.ssh/authorized_keys
 ```
 
 禁止密码验证连接
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# vim /etc/ssh/sshd_config
 ```
 
@@ -351,7 +353,7 @@ Password:
 用 `vim` 打开文件
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# vim /etc/apt/sources.list
 ```
 
@@ -368,21 +370,21 @@ deb-src http://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
 获取更新
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo apt update
 ```
 
 更新系统
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo apt full-upgrade -y
 ```
 
 清理缓存
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo apt clean
 ```
 
@@ -393,14 +395,14 @@ deb-src http://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
 更新 `pip`
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# pip install -i https://mirrors.ustc.edu.cn/pypi/web/simple pip -U
 ```
 
 更新配置文件
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# mkdir ~/.pip && vim ~/.pip/pip.conf
 ```
 
@@ -414,7 +416,7 @@ trusted-host = https://pypi.mirrors.ustc.edu.cn
 查看 `pip` 源
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# pip3 config list
 ```
 
@@ -428,7 +430,7 @@ install.trusted-host='https://pypi.mirrors.ustc.edu.cn'
 配置代理
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# git config --global url."https://mirror.ghproxy.com/https://github.com/".insteadOf https://github.com/ && git config --global --get-regexp "url\..*\.insteadOf"
 ```
 
@@ -437,7 +439,7 @@ install.trusted-host='https://pypi.mirrors.ustc.edu.cn'
 修改配置文件
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# vim /etc/resolv.conf
 ```
 
@@ -450,7 +452,7 @@ nameserver 1.1.1.1
 更新缓存并测试网络
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo service networking restart && ping g.cn -c 3
 ```
 
@@ -459,15 +461,15 @@ nameserver 1.1.1.1
 运行服务
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo systemctl start mysql
 ```
 
 修改密码
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
-└─# mysqladmin -u root password 
+┌──(root㉿kali)-[~]
+└─# mysqladmin -u root password
 New password: 
 Confirm new password:
 ```
@@ -479,7 +481,7 @@ Confirm new password:
 修改配置文件
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# vim /etc/proxychains4.conf
 ```
 
@@ -491,7 +493,7 @@ socks5		192.168.1.7 10808
 测试代理
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# proxychains4 ping -c3 google.com
 ```
 
@@ -500,14 +502,14 @@ socks5		192.168.1.7 10808
 安装 `ufw` 
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo apt install -y ufw
 ```
 
 开启防火墙
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo ufw enable
 Firewall is active and enabled on system startup
 ```
@@ -515,7 +517,7 @@ Firewall is active and enabled on system startup
 关闭防火墙
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo ufw disable
 Firewall stopped and disabled on system startup
 ```
@@ -523,7 +525,7 @@ Firewall stopped and disabled on system startup
 **创建目录**
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# mkdir /root/tools
 ```
 
@@ -604,7 +606,7 @@ Firefox
 卧底模式
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# kali-undercover
 ```
 
@@ -619,6 +621,6 @@ Firefox
 获取更新
 
 ```shell
-┌──(root㉿#-kali-#)-[~]
+┌──(root㉿kali)-[~]
 └─# sudo apt update
 ```
